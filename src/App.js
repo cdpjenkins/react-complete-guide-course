@@ -19,11 +19,16 @@ const content = [
     "Next.js (Fullstack framework)",
     "React Native (build native mobile apps with React)"
   ],
+  // [
+  //   "Vanilla JavaScript requires imperative programming",
+  //   "Imperative Programming: You define all the steps needed to achieve a result",
+  //   "React on the other hand embraces declarative programming",
+  //   "With React, you define the goal and React figures out how to get there"
+  // ],
   [
-    "Vanilla JavaScript requires imperative programming",
-    "Imperative Programming: You define all the steps needed to achieve a result",
-    "React on the other hand embraces declarative programming",
-    "With React, you define the goal and React figures out how to get there"
+      "Behold: I have written some more text here",
+      "What does the text say?",
+      "It says stuff, and things"
   ]
 ];
 
@@ -60,6 +65,13 @@ export default function App() {
           >
             Related Resources
           </button>
+          <button
+            className={activeContentIndex === 3 ? "active" : ""}
+            onClick={() => setActiveContentIndex(3)}
+        >
+          Stuff and Things
+        </button>
+
         </menu>
         <div id="tab-content">
           <ul>
