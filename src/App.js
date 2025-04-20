@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import "./styles.css";
 
 const content = [
@@ -34,6 +34,7 @@ const content = [
 
 export default function App() {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   return (
     <div>
@@ -68,9 +69,9 @@ export default function App() {
           <button
             className={activeContentIndex === 3 ? "active" : ""}
             onClick={() => setActiveContentIndex(3)}
-        >
-          Stuff and Things
-        </button>
+          >
+            Stuff and Things
+          </button>
 
         </menu>
         <div id="tab-content">
@@ -80,7 +81,17 @@ export default function App() {
             ))}
           </ul>
         </div>
+
+        <div>
+          <h1>{counter}</h1>
+          <button onClick={function () {
+            setCounter(counter - 1);
+          }}>-</button>
+          <button onClick={function () {
+            setCounter(counter + 1);
+          }}>+</button>
+        </div>
       </div>
     </div>
-  );
+  )
 }
