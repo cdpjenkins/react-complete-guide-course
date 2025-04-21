@@ -1,4 +1,5 @@
-import reactImg from "../assets/react-core-concepts.png";
+import reactImg from "../../assets/react-core-concepts.png";
+import "./Header.css"
 
 const adjectives = ["Fundamental", "Fun", "Awesome", "Core", "Super", "Crucial", "Exciting"];
 
